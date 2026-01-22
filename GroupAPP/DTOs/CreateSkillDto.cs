@@ -2,8 +2,8 @@
 {
     public class CreateSkillDto
     {
-        public string SkillName { get; set; }
-        public string CorrectedSkillName { get; set; }
+        public required string SkillName { get; set; }
+        public required string CorrectedSkillName { get; set; }
         public int ProficiencyLevelId { get; set; }
     }
 }

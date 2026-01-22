@@ -20,7 +20,7 @@ namespace GroupAPP.Services.Controllers
         => Ok(await _service.GetApprovedNonAssessmentCoursesAsync());
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, UpdateCourseDto dto)
+        public async Task<IActionResult> Update(int id, DTOs.UpdateCourseDto dto)
         {
             await _service.UpdateCourseAsync(id, dto);
             return NoContent();
